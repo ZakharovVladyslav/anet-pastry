@@ -1,0 +1,20 @@
+@import 'styles';
+
+.toggleParameterWrapper {
+   box-sizing: border-box;
+
+   @include flex($justify: space-between, $gap: 8px);
+
+   @include align-left;
+
+   width: 100%;
+   max-width: 50%;
+
+   padding-right: 20px;
+   padding-top: 8px;
+
+   .title {
+      font-family: $exo2Medium;
+      color: $textBlack;
+   }
+}

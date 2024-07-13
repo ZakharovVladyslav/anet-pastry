@@ -1,0 +1,15 @@
+@import 'styles';
+
+html,
+body {
+   @include zero-indent();
+
+   min-height: 100dvh;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+@include text-settings();

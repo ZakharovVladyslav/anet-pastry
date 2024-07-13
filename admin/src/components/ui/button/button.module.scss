@@ -1,0 +1,104 @@
+@import 'styles';
+
+.button {
+   @include button;
+
+   border-radius: 12px;
+
+   padding: 12px 40px;
+
+   font-size: 24px;
+   font-family: $exo2Medium;
+
+   transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+   &:disabled {
+      border-color: transparent;
+
+      color: rgba($textBlack, 0.7);
+
+      cursor: not-allowed;
+   }
+}
+
+/* SIZES */
+.m {
+   font-size: 20px;
+
+   padding: 10px 20px;
+
+   border-radius: 8px;
+}
+
+.s {
+   font-size: 16px;
+
+   padding: 8px 24px;
+
+   border-radius: 4px;
+}
+
+/* TYPES */
+
+.primary {
+   color: $textBlack;
+
+   background-color: $blue;
+
+   border: 1px solid $blue;
+
+   &:not(:disabled):hover {
+      background-color: $lightBlue;
+   }
+}
+
+.secondary {
+   color: $textBlue;
+
+   background-color: transparent;
+
+   border: 1px solid $lightBlue;
+
+   &:not(:disabled):hover {
+      background-color: $lightBlue;
+   }
+}
+
+.active {
+   background-color: $peach;
+   color: $yellowish;
+}
+
+/* WIDTH */
+
+.auto {
+   width: auto;
+}
+
+.full {
+   width: 100%;
+}
+
+.fitContent {
+   width: fit-content;
+}
+
+/* END OF WIDTH */
+
+.disabled {
+   cursor: not-allowed;
+
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.left {
+   margin-right: auto;
+}
+
+.center {
+   margin: 0 auto;
+}
+
+.right {
+   margin-left: auto;
+}

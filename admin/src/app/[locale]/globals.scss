@@ -1,0 +1,35 @@
+@import 'styles';
+
+* {
+   font-family: sans-serif;
+}
+
+html,
+body {
+   @include zero-indent();
+
+   min-height: 100dvh;
+}
+
+body {
+   @include flex(column);
+
+   &::-webkit-scrollbar {
+      height: 100%;
+      width: 12px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: $peach;
+      border-radius: 8px;
+      width: 50%;
+   }
+
+   &::-webkit-scrollbar-track {
+      background-color: transparent;
+      width: 16px;
+   }
+}
+
+@include text-settings();

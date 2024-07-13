@@ -1,0 +1,44 @@
+@import 'styles';
+
+.toggleLabel {
+   box-sizing: border-box;
+
+   padding: 4px;
+
+   height: 24px;
+   width: 50px;
+
+   border-radius: 50px;
+
+   background-color: $gray;
+
+   position: relative;
+
+   cursor: pointer;
+
+   .circle {
+      box-sizing: border-box;
+
+      position: absolute;
+      top: 50%;
+      left: 4px;
+      transform: translateY(-50%);
+
+      width: 16px;
+      height: 16px;
+
+      border-radius: 50%;
+
+      background-color: $yellowish;
+
+      transition: 0.2s ease-in-out left;
+   }
+
+   &.checked {
+      background-color: $blue;
+
+      .circle {
+         left: 30px;
+      }
+   }
+}

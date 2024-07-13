@@ -1,0 +1,159 @@
+{
+   "Auth": {
+      "SignIn": {
+         "enter": "Увійти",
+         "email": "Електронна пошта",
+         "password": "Пароль"
+      }
+   },
+   "Sidebar": {
+      "shop": "Магазин",
+      "system": "Система",
+      "Tabs": {
+         "orders": "Замовлення",
+         "products": "Продукти",
+         "statistics": "Статистика",
+         "users": "Користувачі",
+         "admins": "Адміністратори",
+         "settings": "Налаштування"
+      }
+   },
+   "Modal": {
+      "Orders": {
+         "Titles": {
+            "info": "Інформація про замовлення",
+            "products": "Позиції"
+         }
+      },
+      "Product": {
+         "productName": "Назва продукту",
+         "price": "Ціна",
+         "discount": "Знижка",
+         "category": "Категорія",
+         "portionSize": "Розмір порції",
+         "portionWeight": "Вага порції",
+         "allergens": "Алергени",
+         "parameter": "Параметри",
+         "description": "Опис продукту",
+         "noCategory": "Категорія не обрана",
+         "optional": "Необов'язково",
+         "save": "Зберегти зміни",
+         "create": "Створити продукт",
+         "cancel": "Скасувати зміни",
+         "Parameter": {
+            "parameterName": "Назва",
+            "parameterType": "Тип",
+            "price": "Ціна",
+            "additionalLabel": "Одиниця вимірювання",
+            "defaultValue": "Значення за замовчуванням",
+            "Color": {
+               "configure": "Конфігурація кольору"
+            },
+            "Input": {
+               "defaultValue": "Значення за замовчуванням",
+               "unit": "Одиниця вимірювання"
+            },
+            "Toggle": {
+               "title": "Стан за замовчуванням"
+            },
+            "Counter": {
+               "defaultValue": "Значення за замовчуванням",
+               "unit": "Одиниця вимірювання",
+               "step": "Крок зміни"
+            }
+         },
+         "Create": {
+            "cancel": "Скасувати",
+            "create": "Створити",
+            "Stages": {
+               "info": "Інформація",
+               "parameters": "Параметри",
+               "images": "Зображення"
+            }
+         }
+      },
+      "ColorPicker": {
+         "addColor": "Додати колір в палітру",
+         "colorPreview": "Попередній перегляд кольору",
+         "ChosenColors": {
+            "title": "Обрані кольори",
+            "noColors": "Кольори ще не додано"
+         },
+         "Buttons": {
+            "cancel": "Відмінити",
+            "save": "Зберегти"
+         }
+      }
+   },
+   "Fields": {
+      "Orders": {
+         "Delivery": {
+            "delivery": "Надсилання",
+            "pickup": "Самовивіз"
+         },
+         "Status": {
+            "new": "Нове",
+            "inProgress": "В обробці",
+            "completed": "Завершено",
+            "canceled": "Скасовано"
+         },
+         "Payment": {
+            "cash": "Готівка",
+            "card": "Картка"
+         },
+         "PaymentStatus": {
+            "paid": "Оплачено",
+            "not_paid": "Не оплачено",
+            "canceled": "Скасовано",
+            "paid_partially": "Сплачено передоплату"
+         }
+      }
+   },
+   "Headers": {
+      "Orders": {
+         "status": "Статус",
+         "total": "Загальна сума",
+         "delivery": "Надсилання",
+         "address": "Адреса",
+         "payment": "Оплата",
+         "name": "Ім'я",
+         "paymentStatus": "Статус оплати",
+         "phone": "Телефон",
+         "date": "Дата",
+         "orderNumber": "Номер замовлення",
+         "call": "Назва"
+      }
+   },
+   "Allergens": {
+      "berries": "Ягоди",
+      "nuts": "Горіхи",
+      "gluten": "Глютен",
+      "eggs": "Яйця",
+      "chocolate": "Шоколад",
+      "fructose": "Фруктоза",
+      "lactose": "Лактоза",
+      "protein": "Білок"
+   },
+   "Category": {
+      "bento_cakes": "Бенто-торти",
+      "cheesecakes": "Чізкейки",
+      "marshmallows": "Зефір",
+      "sweets": "Цукерки",
+      "tarts": "Тарти"
+   },
+   "Product": {
+      "Card": {
+         "noName": "Немає назви",
+         "activate": "Активувати",
+         "deactivate": "Деактивувати",
+         "delete": "Видалити",
+         "noCategory": "Категорія не обрана"
+      }
+   },
+   "ParameterType": {
+      "color": "Колір",
+      "counter": "Лічильник",
+      "input": "Поле вводу",
+      "toggle": "Перемикач"
+   }
+}

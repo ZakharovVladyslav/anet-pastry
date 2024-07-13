@@ -1,0 +1,11 @@
+@import 'styles';
+
+.counterParameterWrapper {
+   box-sizing: border-box;
+
+   width: 100%;
+
+   display: grid;
+   gap: 8px;
+   grid-template-columns: repeat(2, 1fr);
+}

@@ -1,0 +1,35 @@
+@import 'styles';
+
+.content {
+   @include vertical-scroll;
+   @include full-size;
+   @include flex(column, $gap: 12px);
+
+   .info {
+      box-sizing: border-box;
+
+      padding: 12px;
+
+      p {
+         @include flex(row, space-between, center, 20px);
+
+         width: 100%;
+
+         font-size: 24px;
+         color: rgba($textBlack, 0.8);
+         font-weight: 500;
+
+         span {
+            font-weight: 800;
+         }
+      }
+   }
+
+   .products {
+      @include flex(column, $gap: 20px);
+
+      box-sizing: border-box;
+
+      padding: 12px;
+   }
+}

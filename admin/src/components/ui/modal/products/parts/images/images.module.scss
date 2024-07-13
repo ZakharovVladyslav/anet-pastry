@@ -1,0 +1,33 @@
+@import 'styles';
+
+.outterWrapper {
+   @include vertical-scroll;
+   @include styled-scrollbar;
+   @include full-size;
+
+   box-sizing: border-box;
+
+   .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+
+      height: 100%;
+
+      box-sizing: border-box;
+      height: fit-content;
+
+      .images {
+         @include zero-indent;
+         @include horizontal-scroll;
+         @include styled-scrollbar;
+
+         @include flex(row-reverse, flex-start, flex-start, 32px, wrap);
+
+         border-radius: 16px;
+
+         width: 100%;
+         height: 192px;
+      }
+   }
+}

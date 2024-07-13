@@ -1,0 +1,32 @@
+@import 'styles';
+
+.parameters {
+   @include flex(column, $gap: 16px);
+   @include vertical-scroll;
+   @include styled-scrollbar;
+
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+
+   padding: 24px;
+
+   .title {
+      font-size: 24px;
+      font-family: $exo2Medium;
+      color: $textBlack;
+   }
+
+   .parameterSection {
+      @include flex(column, $gap: 48px);
+
+      width: 100%;
+   }
+
+   .append {
+      width: 100%;
+
+      margin-top: 32px;
+      padding: 16px;
+   }
+}

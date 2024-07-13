@@ -1,0 +1,116 @@
+{
+   "Auth": {
+      "SignIn": {
+         "enter": "Enter"
+      }
+   },
+   "Sidebar": {
+      "shop": "Shop",
+      "system": "System",
+      "Tabs": {
+         "orders": "Orders",
+         "products": "Products",
+         "statistics": "Statistic",
+         "users": "Users",
+         "admins": "Admins",
+         "settings": "Settings"
+      }
+   },
+   "Modal": {
+      "Orders": {
+         "Titles": {
+            "info": "Order information",
+            "products": "Positions"
+         }
+      },
+      "Product": {
+         "productName": "Product name",
+         "price": "Price",
+         "category": "Category",
+         "allergens": "Allergens",
+         "parameter": "Parameters",
+         "description": "Product description",
+         "noCategory": "Category not chosen",
+         "save": "Save changes",
+         "create": "Create product",
+         "cancel": "Cancel changes",
+         "Parameter": {
+            "parameterName": "Parameter name",
+            "parameterType": "Parameter type",
+            "price": "Price",
+            "additionalLabel": "Measurement unit"
+         }
+      }
+   },
+   "Fields": {
+      "Orders": {
+         "Delivery": {
+            "delivery": "Ship",
+            "pickup": "Pick up"
+         },
+         "Status": {
+            "new": "New",
+            "inProgress": "Processing",
+            "completed": "Finished",
+            "canceled": "Canceled"
+         },
+         "Payment": {
+            "cash": "Cash",
+            "card": "Card"
+         },
+         "PaymentStatus": {
+            "paid": "Оплачено",
+            "not_paid": "Не оплачено",
+            "canceled": "Скасовано",
+            "paid_partially": "Сплачено передоплату"
+         }
+      }
+   },
+   "Headers": {
+      "Orders": {
+         "status": "Статус",
+         "total": "Загальна сума",
+         "delivery": "Доставка",
+         "address": "Адреса",
+         "payment": "Оплата",
+         "name": "Ім'я",
+         "paymentStatus": "Статус оплати",
+         "phone": "Телефон",
+         "date": "Дата",
+         "orderNumber": "Номер замовлення",
+         "call": "Назва"
+      }
+   },
+   "Allergens": {
+      "berries": "Berries",
+      "nuts": "Nuts",
+      "gluten": "Gluten",
+      "eggs": "Eggs",
+      "chocolate": "Chocoale",
+      "fructose": "Fructose",
+      "lactose": "Lactose",
+      "protein": "Protein"
+   },
+   "Category": {
+      "bento_cakes": "Бенто-торти",
+      "cheesecakes": "Чізкейки",
+      "marshmallows": "Зефір",
+      "sweets": "Цукерки",
+      "tarts": "Тарти"
+   },
+   "Product": {
+      "Card": {
+         "noName": "Немає назви",
+         "activate": "Активувати",
+         "deactivate": "Деактивувати",
+         "delete": "Видалити",
+         "noCategory": "Категорія не обрана"
+      }
+   },
+   "ParameterType": {
+      "color": "Колір",
+      "counter": "Лічильник",
+      "input": "Поле вводу",
+      "toggle": "Перемикач"
+   }
+}

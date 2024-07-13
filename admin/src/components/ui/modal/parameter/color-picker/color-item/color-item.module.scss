@@ -1,0 +1,45 @@
+@import 'styles';
+
+.wrapper {
+   @include box-shadow-m;
+   overflow: hidden;
+
+   position: relative;
+
+   height: 38px;
+
+   aspect-ratio: 2 / 1;
+
+   border-radius: 8px;
+
+   .color {
+      @include full-size;
+   }
+
+   .trash {
+      @include full-size;
+
+      position: absolute;
+      @include center;
+
+      opacity: 0;
+
+      transition: 0.15s ease-in-out opacity;
+
+      background-color: rgba($textBlack, 0.5);
+
+      svg {
+         fill: white;
+
+         path {
+            fill: white;
+         }
+      }
+   }
+
+   &:hover {
+      .trash {
+         opacity: 1;
+      }
+   }
+}

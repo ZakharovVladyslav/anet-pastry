@@ -1,0 +1,16 @@
+type TAllergen =
+   | 'gluten'
+   | 'peanuts'
+   | 'soybeans'
+   | 'milk'
+   | 'nuts'
+   | 'eggs'
+   | 'fish'
+   | 'shellfish'
+   | 'wheat'
+   | 'celery'
+   | 'mustard'
+   | 'sesame'
+   | 'sulphur'
+   | 'lupin'
+   | 'molluscs';

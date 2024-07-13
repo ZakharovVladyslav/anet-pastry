@@ -1,0 +1,144 @@
+@import 'styles';
+
+.iconedButton {
+   box-sizing: border-box;
+   @include button;
+
+   @include flex(row, center, center);
+   padding: 0;
+
+   svg {
+      max-height: 100%;
+      max-width: 100%;
+   }
+}
+
+/* size */
+
+.s {
+   width: 16px;
+   height: 16px;
+
+   padding: 4px;
+}
+
+.m {
+   width: 24px;
+   height: 24px;
+
+   padding: 6px;
+}
+
+.l {
+   width: 52px;
+   height: 52px;
+
+   padding: 8px;
+}
+
+.xl {
+   width: 96px;
+   height: 96px;
+
+   padding: 8px;
+}
+
+.width-full {
+   width: 100%;
+}
+
+.width-half {
+   width: 50%;
+}
+
+.height-full {
+   height: 100%;
+}
+
+.height-half {
+   height: 50%;
+}
+
+.width-s {
+   width: 100%;
+
+   padding: 4px;
+
+   border-radius: 4px;
+
+   svg {
+      height: 16px;
+   }
+}
+
+.width-m {
+   width: 100%;
+
+   padding: 8px;
+
+   border-radius: 8px;
+
+   svg {
+      height: 24px;
+   }
+}
+
+.width-l {
+   width: 100%;
+
+   padding: 12px;
+
+   border-radius: 12px;
+
+   svg {
+      height: 32px;
+   }
+}
+
+/* aspect */
+
+.square {
+   @include flex(row, center, center);
+
+   aspect-ratio: 1 / 1;
+}
+
+.square-s {
+   aspect-ratio: 1 / 1;
+   border-radius: 4px;
+}
+
+.square-m {
+   aspect-ratio: 1 / 1;
+   border-radius: 8px;
+}
+
+.square-l {
+   aspect-ratio: 1 / 1;
+   border-radius: 12px;
+}
+
+.circle {
+   aspect-ratio: 1 / 1;
+
+   border-radius: 50%;
+}
+
+/* type */
+
+.primary {
+   background-color: transparent;
+}
+
+.secondary {
+   background-color: rgba($blue, 0.8);
+
+   border: 1px solid rgba($blue, 0.8);
+
+   transition: 0.15s ease-in-out background-color;
+
+   &:hover {
+      background-color: $lightBlue;
+      border: 1px solid transparent;
+   }
+}

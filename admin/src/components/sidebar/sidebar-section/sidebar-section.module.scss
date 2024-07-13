@@ -1,0 +1,22 @@
+@import 'styles';
+
+.sidebarSection {
+   @include flex(column, $gap: 12px);
+
+   width: 100%;
+
+   box-sizing: border-box;
+
+   .title {
+      font-size: 32px;
+      color: rgba($textBlack, 0.8);
+   }
+
+   .sectionLinks {
+      @include flex(column, $gap: 12px);
+
+      margin-left: 16px;
+
+      width: 100%;
+   }
+}

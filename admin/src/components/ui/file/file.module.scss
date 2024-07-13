@@ -1,0 +1,21 @@
+@import 'styles';
+
+.label {
+   @include flex(row, center, center);
+
+   aspect-ratio: 1/1;
+
+   background-color: $blue;
+
+   border-radius: 16px;
+
+   cursor: pointer;
+
+   .plusIcon {
+      width: 32px;
+
+      path {
+         fill: $yellowish;
+      }
+   }
+}

@@ -1,0 +1,54 @@
+@import 'styles';
+
+.textareaWrapper {
+   box-sizing: border-box;
+
+   .textarea {
+      @include input;
+
+      box-sizing: border-box;
+
+   }
+}
+
+/* SIZES */
+
+.m {
+   @include flex(column, $gap: 8px);
+
+   .label {
+      font-size: 16px;
+   }
+
+   .textarea {
+      @include full-size;
+
+      font-size: 20px;
+
+      padding: 12px 24px;
+
+      border-radius: 8px;
+   }
+}
+
+/* VARIANTS */
+
+.primary {
+   .label {
+      color: $textBlack;
+      font-family: $exo2Medium;
+   }
+
+   .textarea {
+      color: $textBlack;
+      font-family: $exo2Light;
+
+      border-bottom: 2px solid $blue;
+
+      background-color: rgba($blue, 0.2);
+
+      &::placeholder {
+         color: rgba($blue, 0.8);
+      }
+   }
+}

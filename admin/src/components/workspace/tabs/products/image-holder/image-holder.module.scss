@@ -1,0 +1,41 @@
+@import 'styles';
+
+.imageWrapper {
+   @include full-size;
+   @include box-shadow-m;
+
+   border-radius: 16px;
+
+   overflow: hidden;
+
+   aspect-ratio: 1/1;
+
+   position: relative;
+
+   img {
+      @include full-size;
+      border-radius: 16px;
+
+      object-fit: cover;
+   }
+
+   .overlay {
+      @include full-size;
+      @include flex(row, center, center);
+
+      background-color: rgba(#333, 0.4);
+
+      transition: 0.1s ease-in-out opacity;
+
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+
+      .icon {
+         path {
+            fill: white;
+         }
+      }
+   }
+}

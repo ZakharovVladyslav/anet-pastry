@@ -1,0 +1,25 @@
+@import 'styles';
+
+.addProductCard {
+   position: relative;
+
+   height: 500px;
+   aspect-ratio: 2.5 / 4;
+
+   background-color: $blue;
+
+   border-radius: 16px;
+
+   cursor: pointer;
+
+   .plusIcon {
+      position: absolute;
+      @include center;
+
+      width: 30%;
+
+      path {
+         fill: $yellowish;
+      }
+   }
+}

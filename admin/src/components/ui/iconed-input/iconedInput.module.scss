@@ -1,0 +1,73 @@
+@import 'styles';
+
+.iconedInputWrapper {
+   @include flex(column, $gap: 8px);
+
+   box-sizing: border-box;
+
+   width: 100%;
+
+   svg {
+      width: 24px;
+   }
+
+   .label {
+      font-family: $exo2Medium;
+      font-size: 24px;
+      color: $textBlack;
+
+      span {
+         font-size: 0.5em;
+         color: rgba($textBlack, 0.5);
+      }
+   }
+
+   .input {
+      @include input;
+
+      width: 100%;
+
+      background-color: rgba($blue, 0.2);
+
+      border-bottom: 2px solid $blue;
+      border-radius: 8px;
+
+      padding: 10px 20px;
+
+      font-family: sans-serif;
+      color: $textBlack;
+      font-size: 20px;
+
+      &::placeholder {
+         font-size: 0.9em;
+         color: rgba($blue, 0.8);
+      }
+   }
+
+   .errorWrapper {
+      @include flex(row, flex-start, center, 8px);
+
+      svg {
+         @include icon;
+         height: 14px;
+         fill: $red;
+      }
+
+      .error {
+         color: $red;
+         font-family: $exo2Medium;
+         font-weight: 700;
+         font-size: 14px;
+      }
+   }
+}
+
+.primary {
+   .label {
+      color: $textBlack;
+
+      span {
+         color: rgba($textBlack, 0.5);
+      }
+   }
+}

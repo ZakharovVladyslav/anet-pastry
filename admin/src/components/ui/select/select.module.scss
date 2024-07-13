@@ -1,0 +1,173 @@
+@import 'styles';
+
+.selectWrapper {
+   @include flex(column, $gap: 8px);
+
+   box-sizing: border-box;
+
+   width: 100%;
+
+   position: relative;
+
+   svg {
+      width: 24px;
+   }
+
+   .label {
+      font-family: $exo2Medium;
+      color: $textBlack;
+
+      span {
+         font-size: 0.75em;
+         color: rgba($textBlack, 0.5);
+      }
+   }
+
+   .select {
+      @include select;
+      overflow: hidden;
+
+      box-sizing: border-box;
+
+      @include flex(row, space-between, center, 8px);
+
+      background-color: rgba($blue, 0.2);
+
+      border-bottom: 2px solid $blue;
+      border-radius: 8px;
+
+      padding: 10px 20px;
+
+      font-size: 20px;
+      font-family: $exo2Medium;
+      color: $textBlack;
+      text-align: left;
+
+      &.opened {
+         border-bottom-left-radius: 0;
+         border-bottom-right-radius: 0;
+
+         border: 1px solid $textBlack;
+
+         .pointer {
+            transform: rotate(180deg);
+         }
+      }
+
+      .pointer {
+         width: 16px;
+
+         transition: transform 0.2s ease-in-out;
+         transform-origin: center;
+         transform: rotate(0deg);
+      }
+
+      .placeholder {
+         color: rgba($textBlack, 0.5);
+      }
+   }
+
+   .options {
+      box-sizing: border-box;
+
+      overflow: hidden;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      width: 100%;
+
+      background-color: $yellowish;
+
+      margin: 0;
+
+      border: 1px solid $textBlack;
+      border-radius: 12px;
+
+      transition: height 0.2s ease-in-out;
+
+      &.opened {
+         border-top-left-radius: 0;
+         border-top-right-radius: 0;
+         border-top: none;
+      }
+
+      .item {
+         box-sizing: border-box;
+         @include button;
+
+         @include flex(row, space-between, center, 8px);
+
+         background-color: rgba($lightBlue, 0.2);
+
+         width: 100%;
+
+         cursor: pointer;
+
+         padding: 6px 20px;
+
+         transition: 0.1s ease-in-out background-color;
+
+         span {
+            font-size: 20px;
+            font-family: $exo2Light;
+            color: $textBlack;
+         }
+
+         svg {
+            height: 16px;
+
+            path {
+               fill: rgba($textBlack, 0.7);
+            }
+         }
+
+         &:hover {
+            background-color: rgba($blue, 0.5);
+         }
+      }
+
+      .active {
+         background-color: $blue;
+      }
+   }
+}
+
+/* sizes */
+
+.full {
+   width: 100%;
+
+   .select {
+      width: 100%;
+   }
+
+   .options {
+      width: 100%;
+   }
+}
+
+.s {
+   gap: 2px;
+
+   .label {
+      font-size: 12px;
+   }
+
+   .input {
+      font-size: 16px;
+   }
+}
+
+.m {
+   gap: 4px;
+
+   .label {
+      font-size: 16px;
+   }
+
+   .select {
+      font-size: 20px;
+   }
+}

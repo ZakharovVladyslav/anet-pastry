@@ -1,0 +1,13 @@
+@import 'styles';
+
+.tabs {
+   @include flex(column, $gap: 12px);
+
+   box-sizing: border-box;
+
+   width: 100%;
+
+   &:nth-child(n) {
+      width: 100%;
+   }
+}

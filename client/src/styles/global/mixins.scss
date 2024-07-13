@@ -1,0 +1,83 @@
+@import 'variables';
+
+@mixin zero-indent {
+   margin: 0;
+   padding: 0;
+}
+
+@mixin text-settings {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   a {
+      @include zero-indent();
+   }
+}
+
+@mixin link {
+   text-transform: none;
+   text-decoration: none;
+}
+
+@mixin button {
+   border: none;
+   outline: none;
+   background-color: transparent;
+
+   cursor: pointer;
+
+   color: $textBlack;
+
+   &:focus {
+      outline: none;
+   }
+}
+
+@mixin active-button {
+   color: $cherryRed;
+}
+
+/* FLEX BOXES */
+
+@mixin flex {
+   display: flex;
+}
+
+@mixin flex-row {
+   @include flex();
+   flex-direction: row;
+}
+
+@mixin flex-row-reverse {
+   @include flex();
+   flex-direction: row-reverse;
+}
+
+@mixin flex-column {
+   @include flex();
+   flex-direction: column;
+}
+
+@mixin flex-column-reverse {
+   @include flex();
+   flex-direction: column-reverse;
+}
+
+@mixin flex-center {
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin flex-start {
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+@mixin flex-end {
+   justify-content: flex-end;
+   align-items: flex-end;
+}

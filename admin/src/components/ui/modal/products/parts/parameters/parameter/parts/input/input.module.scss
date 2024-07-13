@@ -1,0 +1,7 @@
+@import 'styles';
+
+.inputParameterWrapper {
+   @include flex($gap: 8px);
+
+   width: 100%;
+}

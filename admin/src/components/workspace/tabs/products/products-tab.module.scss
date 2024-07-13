@@ -1,0 +1,11 @@
+@import 'styles';
+
+.cards {
+   @include full-size;
+
+   @include button;
+
+   @include flex($gap: 24px);
+
+   box-sizing: border-box;
+}

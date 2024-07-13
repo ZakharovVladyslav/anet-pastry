@@ -1,0 +1,88 @@
+{
+    "env": {
+      "node": true,
+      "browser": true,
+      "es2021": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "extends": [
+      "eslint:recommended",
+      "next/core-web-vitals",
+      "plugin:react/recommended",
+      "plugin:@next/next/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["@typescript-eslint", "import", "react"],
+    "globals": {
+      "React": "writable",
+      "document": true,
+      "window": true
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": "off",
+      "import/prefer-default-export": "off",
+      "no-plusplus": "off",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error",
+      "prefer-const": "warn",
+      "function-paren-newline": "off",
+      "object-shorthand": "warn",
+      "no-multi-spaces": "error",
+      "no-restricted-imports": "warn",
+      "quotes": ["error", "single"],
+      "max-len": [
+        "error",
+        {
+          "code": 110,
+          "ignorePattern": "d=\"([\\s\\S]*?)\""
+        }
+      ],
+      "max-lines": [
+        "error",
+        {
+          "max": 600,
+          "skipBlankLines": true,
+          "skipComments": true
+        }
+      ],
+      "no-console": [
+        "warn",
+        {
+          "allow": ["warn", "error"]
+        }
+      ],
+      "import/order": [
+        "error",
+        {
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          },
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index",
+            "object",
+            "type"
+          ]
+        }
+      ]
+    }
+  }

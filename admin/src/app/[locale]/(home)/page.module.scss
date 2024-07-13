@@ -1,0 +1,10 @@
+@import 'styles';
+
+.main {
+   @include flex($gap: 32px);
+
+   flex-grow: 1;
+   width: 100%;
+
+   box-sizing: border-box;
+}

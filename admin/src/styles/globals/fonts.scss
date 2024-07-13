@@ -1,0 +1,84 @@
+/* EXO2 FONT */
+
+@font-face {
+   font-family: 'Exo2-Black';
+   src: local('Exo2-Black'),
+      url('/fonts/Exo2/Exo2-Black.woff2') format('woff2') url('/fonts/Exo2/Exo2-Black.woff')
+         format('woff'),
+      url('/fonts/Exo2/Exo2-Black.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-Black.eot') format('embedded-opentype');
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: 'Exo2-Bold';
+   src: local('Exo2-Bold'),
+      url('/fonts/Exo2/Exo2-Bold.woff2') format('woff2') url('/fonts/Exo2/Exo2-Bold.woff')
+         format('woff'),
+      url('/fonts/Exo2/Exo2-Bold.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-Bold.eot') format('embedded-opentype');
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Exo2-SemiBold';
+   src: local('Exo2-SemiBold'), url('/fonts/Exo2/Exo2-SemiBold.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-SemiBold.eot') format('embedded-opentype');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Exo2-Medium';
+   src: local('Exo2-Medium'), url('/fonts/Exo2/Exo2-Medium.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-Medium.woff2') format('woff2'),
+      url('/fonts/Exo2/Exo2-Medium.woff') format('woff'),
+      url('/fonts/Exo2/Exo2-Medium.eot') format('embedded-opentype');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'Exo2-Regular';
+   src: local('Exo2-Regular'), url('/fonts/Exo2/Exo2-Regular.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-Regular.woff2') format('woff2'),
+      url('/fonts/Exo2/Exo2-Regular.woff') format('woff'),
+      url('/fonts/Exo2/Exo2-Regular.eot') format('embedded-opentype');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Exo2-Light';
+   src: local('Exo2-Light'), url('/fonts/Exo2/Exo2-Light.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-Light.woff2') format('woff2'),
+      url('/fonts/Exo2/Exo2-Light.woff') format('woff'),
+      url('/fonts/Exo2/Exo2-Light.eot') format('embedded-opentype');
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: 'Exo2-ExtraLight';
+   src: local('Exo2-ExtraLight'), url('/fonts/Exo2/Exo2-ExtraLight.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-ExtraLight.woff2') format('woff2'),
+      url('/fonts/Exo2/Exo2-ExtraLight.woff') format('woff'),
+      url('/fonts/Exo2/Exo2-ExtraLight.eot') format('embedded-opentype');
+   font-weight: 200;
+}
+
+@font-face {
+   font-family: 'Exo2-ExtraBold';
+   src: local('Exo2-ExtraBold'), url('/fonts/Exo2/Exo2-ExtraBold.ttf') format('truetype'),
+      url('/fonts/Exo2/Exo2-ExtraBold.woff2') format('woff2'),
+      url('/fonts/Exo2/Exo2-ExtraBold.woff') format('woff'),
+      url('/fonts/Exo2/Exo2-ExtraBold.eot') format('embedded-opentype');
+   font-weight: 800;
+}
+
+/* FORUM FONT */
+
+@font-face {
+   font-family: 'Forum-Medium';
+   src: local('Forum-Medium'), url('/fonts/Forum/Forum-Medium.ttf') format('truetype'),
+      url('/fonts/Forum/Forum-Medium.woff2') format('woff2'),
+      url('/fonts/Forum/Forum-Medium.woff') format('woff'),
+      url('/fonts/Forum/Forum-Medium.eot') format('embedded-opentype');
+   font-weight: 500;
+}

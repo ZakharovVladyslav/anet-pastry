@@ -1,0 +1,77 @@
+@import 'styles';
+
+.wrapper {
+   @include full-size;
+
+   display: grid;
+   align-content: space-between;
+   align-items: center;
+
+   .headline {
+      @include flex($gap: 32px);
+
+      .colorFields {
+         @include flex(column, space-between, center, 8px);
+
+         width: 50%;
+
+         .inputs {
+            @include flex(column, $gap: 8px);
+
+            width: 100%;
+            flex-grow: 1;
+
+            .tripleColors {
+               @include flex($gap: 8px);
+            }
+         }
+
+         .preview {
+            @include flex(row, center, center, 8px);
+
+            @include box-shadow-m;
+
+            width: 100%;
+            min-height: 50px;
+
+            border-radius: 8px;
+
+            p {
+               font-size: 10px;
+               color: $textBlack;
+               font-family: $exo2Medium;
+            }
+         }
+      }
+   }
+
+   .chosenColorsWrapper {
+      @include flex(column, flex-start, flex-start, 4px);
+
+      .title {
+         font-size: 24px;
+         color: $textBlack;
+         font-family: $exo2SemiBold;
+      }
+
+      .chosenColors {
+         @include flex(row, flex-start, center, 12px);
+
+         .noColors {
+            font-size: 16px;
+            font-family: $exo2Medium;
+            color: $gray;
+            width: 100%;
+            text-align: center;
+         }
+      }
+   }
+
+   .buttons {
+      @include flex($gap: 8px);
+
+      width: 100%;
+
+      justify-self: flex-end;
+   }
+}

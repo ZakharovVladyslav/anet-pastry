@@ -1,0 +1,15 @@
+@import 'styles';
+
+.parameterWrapper {
+   @include flex(column, center, center, 8px);
+
+   box-sizing: border-box;
+
+   width: 100%;
+
+   .innerWrapper {
+      @include flex($justify: flex-end, $align: flex-end, $gap: 8px);
+
+      width: 100%;
+   }
+}

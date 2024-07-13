@@ -1,0 +1,10 @@
+@import 'styles';
+
+.wrapper {
+   @include full-size;
+   @include flex(column, flex-start, center, 32px);
+
+   overflow: hidden;
+
+   box-sizing: border-box;
+}

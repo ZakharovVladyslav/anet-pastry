@@ -1,0 +1,27 @@
+@import 'styles';
+
+.react-colorful {
+   width: 50% !important;
+   height: unset !important;
+   aspect-ratio: 1 / 1;
+
+   gap: 8px;
+
+   & .react-colorful__saturation {
+      @include box-shadow-m;
+
+      border-radius: 8px;
+   }
+
+   & .react-colorful__hue {
+      @include box-shadow-m;
+
+      border-radius: 8px;
+   }
+
+   & .react-colorful__alpha {
+      @include box-shadow-m;
+
+      border-radius: 8px;
+   }
+}

@@ -1,0 +1,55 @@
+@import 'styles';
+
+.sidebar {
+   @include flex-child;
+   box-sizing: border-box;
+
+   @include flex(column, $gap: 32px);
+
+   min-height: 100dvh;
+   height: 100%;
+   max-width: 360px;
+   width: 360px;
+
+   background-color: $peach;
+
+   position: relative;
+
+   padding: 40px;
+
+   .adminInfo {
+      @include flex(row, space-between, center, 12px);
+
+      width: 100%;
+
+      .avatarPlaceholder {
+         @include flex(row, center, center);
+
+         color: $textBlack;
+         font-size: 40px;
+         font-weight: 900;
+
+         width: 100px;
+         height: 100px;
+         aspect-ratio: 1/1;
+         border-radius: 50%;
+         background-color: $oldLace;
+      }
+
+      .infoSection {
+         @include flex(column, $gap: 8px);
+
+         .name {
+            font-size: 20px;
+            font-weight: 800;
+            color: $textBlack;
+         }
+
+         .role {
+            font-size: 16px;
+            font-weight: 600;
+            color: $textBlack;
+         }
+      }
+   }
+}

@@ -1,0 +1,10 @@
+@import 'styles';
+
+.mainInfo {
+   @include full-size;
+   @include vertical-scroll;
+   @include styled-scrollbar;
+   @include flex(column, flex-start, stretch, 16px);
+
+   padding: 0 8px;
+}

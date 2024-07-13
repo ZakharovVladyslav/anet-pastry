@@ -1,0 +1,44 @@
+@import 'styles';
+
+.product {
+   width: 100%;
+
+   box-sizing: border-box;
+
+   @include flex($gap: 32px);
+
+   p {
+      @include flex($align: center, $gap: 20px);
+
+      font-size: 24px;
+      color: rgba($textBlack, 0.8);
+      font-weight: 500;
+
+      span {
+         font-weight: 800;
+      }
+   }
+
+   .imagePlaceholder {
+      width: 225px;
+      height: 225px;
+      aspect-ratio: 1/1;
+
+      border-radius: 8px;
+
+      background-color: rgba(black, 0.3);
+
+      box-sizing: border-box;
+   }
+
+   img {
+      box-sizing: border-box;
+      position: relative;
+
+      border-radius: 8px;
+   }
+
+   .productInfo {
+      @include flex(column, 12px);
+   }
+}
