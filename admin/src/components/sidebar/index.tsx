@@ -7,7 +7,7 @@ import { RootState } from '@/store';
 import { capitalize } from '@/utils';
 import { Loader } from '../ui';
 
-import s from './Sidebar.module.scss';
+import s from './sidebar.module.scss';
 
 import { SidebarTabs } from './tabs';
 

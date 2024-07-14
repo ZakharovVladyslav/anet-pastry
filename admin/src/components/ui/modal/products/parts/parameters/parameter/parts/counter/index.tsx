@@ -9,7 +9,7 @@ import { Input } from '@/components';
 import { RootState, updateCreationCard } from '@/store';
 import { acceptDigitsOnly } from '@/utils';
 
-import s from './Counter.module.scss';
+import s from './counter.module.scss';
 
 type TProps = {
    paramId: UUID;

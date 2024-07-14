@@ -11,7 +11,7 @@ import { TrashIcon } from '@/icons';
 import { RootState, updateCreationCard } from '@/store';
 import { acceptDigitsOnly } from '@/utils';
 
-import s from './Parameter.module.scss';
+import s from './parameter.module.scss';
 
 import { CounterParameter, ToggleParameter, InputParameter } from './parts';
 

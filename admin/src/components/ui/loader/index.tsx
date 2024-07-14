@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React, { useEffect } from 'react';
 
-import s from './Loader.module.scss';
+import s from './loader.module.scss';
 
 type TProps = {
    global?: boolean;
@@ -15,10 +15,10 @@ export function Loader({ global = false }: TProps): JSX.Element {
 
       loader.style.opacity = '1';
 
-      return (() => {
+      return () => {
          loader.style.opacity = '0';
-      })
-   }, [])
+      };
+   }, []);
 
    return (
       <div

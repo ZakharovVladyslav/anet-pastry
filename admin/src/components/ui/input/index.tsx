@@ -5,7 +5,7 @@ import { ChangeEventHandler } from 'react';
 import { EFieldType } from '@/enums';
 import { ErrorIcon } from '@/icons';
 
-import s from './Input.module.scss';
+import s from './input.module.scss';
 
 type TType = 'primary';
 type TSize = 's' | 'm' | 'l';
