@@ -8,7 +8,7 @@ import { useTranslations } from 'use-intl';
 import { Toggle } from '@/components';
 import { RootState, updateCreationCard } from '@/store';
 
-import s from './Toggle.module.scss';
+import s from './toggle.module.scss';
 
 type TProps = {
    paramId: UUID;

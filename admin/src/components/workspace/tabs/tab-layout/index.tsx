@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import { Divider } from '@/components';
 
-import s from './Layout.module.scss';
+import s from './layout.module.scss';
 
 type TProps = {
    title: string;

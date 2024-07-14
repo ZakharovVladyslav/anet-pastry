@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Input } from '@/components';
 import { RootState, updateCreationCard } from '@/store';
 
-import s from './Input.module.scss';
+import s from './input.module.scss';
 
 type TProps = {
    paramId: UUID;

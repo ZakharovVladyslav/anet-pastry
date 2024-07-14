@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { allowedTabs, panelByAllowedTab } from '@/const';
 import { RootState } from '@/store';
 
-import s from './Workspace.module.scss';
+import s from './workspace.module.scss';
 
 export const Workspace = () => {
    const { admin } = useSelector((state: RootState) => state.admins);
