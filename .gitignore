@@ -1,3 +1,7 @@
 site-scheme.png
 
 .vscode/
+
+*.env.*
+.env
+*.env
