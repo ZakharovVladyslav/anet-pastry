@@ -27,31 +27,31 @@ export class AdminsController {
    constructor(private readonly adminsService: AdminsService) {}
 
    @Get()
-   // @UseGuards(AdminAuthGuard)
+   @UseGuards(AdminAuthGuard)
    getAdmins() {
       return this.adminsService.getAdmins();
    }
 
    @Get('admin')
-   // @UseGuards(AdminAuthGuard)
+   @UseGuards(AdminAuthGuard)
    getAdminById(@Req() req: Request) {
       return this.adminsService.getAdminById(req);
    }
 
    @Post()
-   // @UseGuards(AdminAuthGuard)
+   @UseGuards(AdminAuthGuard)
    createAdmin(@Body() adminDto: TCreateAdminDto) {
       return this.adminsService.createAdmin(adminDto);
    }
 
    @Patch(':id')
-   // @UseGuards(AdminAuthGuard)
+   @UseGuards(AdminAuthGuard)
    updateAdmin(@Param('id') id: UUID, @Body() updateAdminDto: TUpdateAdminDto) {
       return this.adminsService.updateAdmin(id, updateAdminDto);
    }
 
    @Delete(':id')
-   // @UseGuards(AdminAuthGuard)
+   @UseGuards(AdminAuthGuard)
    deleteAdmin(@Param('id') id: UUID) {
       return this.adminsService.deleteAdmin(id);
    }

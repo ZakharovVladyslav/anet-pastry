@@ -33,6 +33,9 @@ export class AdminsService {
 
    async getAdminById(req: Request) {
       const token = req.headers.authorization?.split(' ')[1];
+
+      if (!token) throw new BadRequestException('Token is not provided');
+
       const { id } = this.jwtService.decode(token);
 
       const admin = await this.adminsRepository.findOne({ where: { id } });
