@@ -1,11 +1,12 @@
 'use client';
 
 import { ChangeEvent } from 'react';
-
 import { useDispatch, useSelector } from 'react-redux';
-import { FilePicker, ImageHolder } from '@/components';
+import { v4 as uuid } from 'uuid';
 
+import { FilePicker, ImageHolder } from '@/components';
 import { RootState, updateCreationCard } from '@/store';
+
 import s from './images.module.scss';
 
 export const ImagesPreview = () => {
@@ -18,7 +19,7 @@ export const ImagesPreview = () => {
 
       if (!targetFile) return;
 
-      const id = crypto.randomUUID();
+      const id = uuid();
 
       const renamedFile = new File([targetFile], `${id}.png`, { type: 'image/png' });
 

@@ -1,13 +1,14 @@
 'use client';
 
-import { UUID } from 'crypto';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslations } from 'use-intl';
+import { v4 as uuidv4 } from 'uuid';
 
-import { Button } from '@/components/ui';
+import { Button } from '@/components';
 import { EDelivery, EPayment, EPaymentStatus, EStatus } from '@/enums';
 import { createOrder, fetchOrders, fetchProducts, RootState } from '@/store';
+
 import { TabLayout } from '../tab-layout';
 import { OrdersCard } from './orders-card';
 
@@ -73,7 +74,7 @@ export const OrdersTab = () => {
                         products: ['d8171941-f4f0-40b7-8642-19bc206d89ec'].map(id => {
                            return products.find(product => product.id === id) as TProduct;
                         }),
-                        id: crypto.randomUUID() as UUID,
+                        id: uuidv4(),
                      }),
                   );
                }}

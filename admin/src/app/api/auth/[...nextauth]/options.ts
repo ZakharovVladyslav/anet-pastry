@@ -21,6 +21,8 @@ export const options: NextAuthOptions = {
                body: JSON.stringify(credentials),
             });
 
+            console.log({ response });
+
             if (response.status === 404) {
                throw new Error('404');
             }

@@ -4,6 +4,7 @@ import { UUID } from 'crypto';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslations } from 'use-intl';
+import { v4 as uuid } from 'uuid';
 
 import { Button, Loader, Modal } from '@/components';
 import { envs } from '@/config';
@@ -45,7 +46,7 @@ export const UpdateProductModal = ({ modalOpened, onClose, productId }: TProps) 
       if (!productId) {
          // if productId is not provided then such product does not exist so we create a new product
 
-         const newId = crypto.randomUUID();
+         const newId = uuid();
 
          dispatch(createCreationCard(newId as UUID));
 

@@ -3,8 +3,9 @@
 import { UUID } from 'crypto';
 import { useTranslations } from 'next-intl';
 import { FC, useEffect, useState } from 'react';
-
 import { useDispatch } from 'react-redux';
+import { v4 as uuid } from 'uuid';
+
 import {
    Button,
    ImagesPreview,
@@ -27,7 +28,7 @@ export const CreateProductModal = ({ isOpened, onClose }: TModalProps) => {
    const [loaded, setLoaded] = useState<boolean>(false);
 
    useEffect(() => {
-      const id = crypto.randomUUID();
+      const id = uuid();
 
       dispatch(createCreationCard(id as UUID));
 
