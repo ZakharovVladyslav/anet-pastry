@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { IconedButton, Input, Select } from '@/components';
 import { EParameterType } from '@/enums';
 import { TrashIcon } from '@/icons';
 import { RootState, updateCreationCard } from '@/store';
@@ -18,10 +19,6 @@ import {
    InputParameter,
    ColorParameter,
 } from './parts';
-
-import { IconedButton } from '@/components/ui/iconed-button';
-import { Input } from '@/components/ui/input';
-import { Select } from '@/components/ui/select';
 
 type TProps = {
    paramId: UUID;
@@ -152,4 +149,4 @@ export const Parameter = ({ paramId, parameters }: TProps) => {
    );
 };
 
-export * from './parts/color';
+export * from './parts';
