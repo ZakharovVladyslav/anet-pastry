@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { ColorParameter, IconedButton, Input, Select } from '@/components';
 import { EParameterType } from '@/enums';
 import { TrashIcon } from '@/icons';
 import { RootState, updateCreationCard } from '@/store';
@@ -13,7 +12,16 @@ import { acceptDigitsOnly } from '@/utils';
 
 import s from './parameter.module.scss';
 
-import { CounterParameter, ToggleParameter, InputParameter } from './parts';
+import {
+   CounterParameter,
+   ToggleParameter,
+   InputParameter,
+   ColorParameter,
+} from './parts';
+
+import { IconedButton } from '@/components/ui/iconed-button';
+import { Input } from '@/components/ui/input';
+import { Select } from '@/components/ui/select';
 
 type TProps = {
    paramId: UUID;
