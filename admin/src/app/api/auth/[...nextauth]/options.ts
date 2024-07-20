@@ -31,6 +31,8 @@ export const options: NextAuthOptions = {
 
             const data = await response.json();
 
+            console.log({ data });
+
             const user = await fetch(`${process.env.SERVER_URL}/admins/admin`, {
                headers: {
                   Authorization: `Bearer ${data.accessToken}`,
