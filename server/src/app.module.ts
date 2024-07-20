@@ -30,11 +30,11 @@ import { DB_ENVS } from './envs';
       AuthModule,
       TypeOrmModule.forRoot({
          type: 'postgres',
-         host: DB_ENVS.HOST,
-         port: +DB_ENVS.PORT,
-         username: DB_ENVS.USERNAME,
-         password: DB_ENVS.PASSWORD,
-         database: DB_ENVS.DATABASE,
+         host: 'localhost',
+         port: 5433,
+         username: 'lcashe',
+         password: '135794ee497531E@#',
+         database: 'postgres',
          entities: [
             ProductsEntity,
             OrdersEntity,
