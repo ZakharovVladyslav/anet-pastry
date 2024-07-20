@@ -20,15 +20,21 @@ export class AuthAdminService {
    ) {}
 
    async login(loginDto: LoginDto) {
+      console.log({ loginDto });
+
       const admin = await this.adminsRepository.findOne({
          where: {
             email: loginDto.email,
          },
       });
 
+      console.log({ admin });
+
       if (!admin) {
          throw new NotFoundException('Admin not found');
       }
+
+      console.log({ aPassword: admin.password, lPassword: loginDto.password });
 
       if (admin.password !== loginDto.password) {
          throw new ForbiddenException('Invalid password');
