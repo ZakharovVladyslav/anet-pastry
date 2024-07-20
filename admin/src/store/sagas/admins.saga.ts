@@ -1,4 +1,5 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
+import { envs } from '@/config';
 import { getToken } from '@/utils';
 import {
    CREATE_ADMIN,
@@ -14,7 +15,6 @@ import {
    fetchAdminsOnSuccess,
    updateAdmin,
 } from '../actions';
-import { envs } from '@/config';
 
 function* fetchAdminsSaga(): Generator<unknown> {
    const token = yield call(getToken);

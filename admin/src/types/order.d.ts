@@ -1,7 +1,3 @@
-import { UUID } from 'crypto';
-import { EDelivery, EPayment, EPaymentStatus, EStatus } from '@/enums';
-import { TProductDTO } from './product';
-
 export type TOrderInnerFilter = {
    label: string;
    value: string | number | boolean;

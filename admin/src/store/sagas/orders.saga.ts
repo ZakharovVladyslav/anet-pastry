@@ -1,5 +1,5 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import { TOrder } from '@/types/order';
+import { envs } from '@/config';
 import { getToken } from '@/utils';
 import {
    createOrder,
@@ -9,7 +9,7 @@ import {
    fetchOrdersSuccess,
    updateOrder,
 } from '../actions';
-import { envs } from '@/config';
+import { TOrder } from '@/types/order';
 
 function* fetchOrdersSaga(): Generator<unknown> {
    const token = yield call(getToken);

@@ -1,4 +1,5 @@
 import { call, takeLatest, put } from 'redux-saga/effects';
+import { envs } from '@/config';
 import { getToken } from '@/utils';
 import {
    createProduct,
@@ -8,7 +9,6 @@ import {
    fetchProductsSuccess,
    updateProduct,
 } from '../actions';
-import { envs } from '@/config';
 
 export function* fetchProductsSaga(): Generator<unknown> {
    try {
