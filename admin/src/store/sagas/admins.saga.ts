@@ -14,13 +14,14 @@ import {
    fetchAdminsOnSuccess,
    updateAdmin,
 } from '../actions';
+import { envs } from '@/config';
 
 function* fetchAdminsSaga(): Generator<unknown> {
    const token = yield call(getToken);
 
    try {
       const response = yield call(() =>
-         fetch('http://localhost:3001/admins', {
+         fetch(`http://${envs.NP_SERVER_URL}/admins`, {
             headers: {
                Authorization: `Bearer ${token}`,
             },
@@ -48,7 +49,7 @@ function* fetchAdminSaga(): Generator<unknown> {
 
    try {
       const response = yield call(() =>
-         fetch('http://localhost:3001/admins/admin', {
+         fetch(`http://${envs.NP_SERVER_URL}/admins/admin`, {
             headers: {
                Authorization: `Bearer ${token}`,
             },
@@ -77,7 +78,7 @@ function* createAdminSaga(action: ReturnType<typeof createAdmin>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch('http://localhost:3001/admins', {
+            await fetch(`http://${envs.NP_SERVER_URL}/admins`, {
                method: 'POST',
                headers: {
                   'Content-Type': 'application/json',
@@ -101,7 +102,7 @@ function* updateAdminSaga(action: ReturnType<typeof updateAdmin>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://localhost:3001/admins/${action.payload.id}`, {
+            await fetch(`http://${envs.NP_SERVER_URL}/admins/${action.payload.id}`, {
                method: 'PATCH',
                headers: {
                   'Content-Type': 'application/json',
@@ -125,7 +126,7 @@ function* deleteAdminSaga(action: ReturnType<typeof deleteAdmin>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://localhost:3001/admins/${action.payload}`, {
+            await fetch(`http://${envs.NP_SERVER_URL}/admins/${action.payload}`, {
                method: 'DELETE',
                headers: {
                   Authorization: `Bearer ${token}`,
