@@ -21,7 +21,7 @@ function* fetchAdminsSaga(): Generator<unknown> {
 
    try {
       const response = yield call(() =>
-         fetch(`http://${envs.NP_SERVER_URL}/admins`, {
+         fetch(`${envs.NP_SERVER_URL}/admins`, {
             headers: {
                Authorization: `Bearer ${token}`,
             },
@@ -49,7 +49,7 @@ function* fetchAdminSaga(): Generator<unknown> {
 
    try {
       const response = yield call(() =>
-         fetch(`http://${envs.NP_SERVER_URL}/admins/admin`, {
+         fetch(`${envs.NP_SERVER_URL}/admins/admin`, {
             headers: {
                Authorization: `Bearer ${token}`,
             },
@@ -78,7 +78,7 @@ function* createAdminSaga(action: ReturnType<typeof createAdmin>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://${envs.NP_SERVER_URL}/admins`, {
+            await fetch(`${envs.NP_SERVER_URL}/admins`, {
                method: 'POST',
                headers: {
                   'Content-Type': 'application/json',
@@ -102,7 +102,7 @@ function* updateAdminSaga(action: ReturnType<typeof updateAdmin>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://${envs.NP_SERVER_URL}/admins/${action.payload.id}`, {
+            await fetch(`${envs.NP_SERVER_URL}/admins/${action.payload.id}`, {
                method: 'PATCH',
                headers: {
                   'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ function* deleteAdminSaga(action: ReturnType<typeof deleteAdmin>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://${envs.NP_SERVER_URL}/admins/${action.payload}`, {
+            await fetch(`${envs.NP_SERVER_URL}/admins/${action.payload}`, {
                method: 'DELETE',
                headers: {
                   Authorization: `Bearer ${token}`,

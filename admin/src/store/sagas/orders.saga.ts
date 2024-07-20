@@ -17,7 +17,7 @@ function* fetchOrdersSaga(): Generator<unknown> {
    try {
       const response = yield call(
          async () =>
-            await fetch(`http://${envs.NP_SERVER_URL}/orders`, {
+            await fetch(`${envs.NP_SERVER_URL}/orders`, {
                headers: {
                   Authorization: `Bearer ${token}`,
                },
@@ -46,7 +46,7 @@ function* createOrderSaga(action: ReturnType<typeof createOrder>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://${envs.NP_SERVER_URL}/orders`, {
+            await fetch(`${envs.NP_SERVER_URL}/orders`, {
                method: 'POST',
                headers: {
                   'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ function* updateOrderSaga(action: ReturnType<typeof updateOrder>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://${envs.NP_SERVER_URL}/orders/${action.payload.id}`, {
+            await fetch(`${envs.NP_SERVER_URL}/orders/${action.payload.id}`, {
                method: 'PUT',
                headers: {
                   'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ function* deleteOrderSaga(action: ReturnType<typeof deleteOrder>): Generator<unk
    try {
       yield call(
          async () =>
-            await fetch(`http://${envs.NP_SERVER_URL}/orders/${action.payload}`, {
+            await fetch(`${envs.NP_SERVER_URL}/orders/${action.payload}`, {
                method: 'DELETE',
                headers: {
                   Authorization: `Bearer ${token}`,

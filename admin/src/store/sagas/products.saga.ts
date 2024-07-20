@@ -12,7 +12,7 @@ import {
 
 export function* fetchProductsSaga(): Generator<unknown> {
    try {
-      const response = yield call(() => fetch(`http://${envs.NP_SERVER_URL}}/products`));
+      const response = yield call(() => fetch(`${envs.NP_SERVER_URL}}/products`));
 
       if ((response as Response).ok) {
          const products = yield (response as Response).json();
@@ -63,7 +63,7 @@ export function* createProductSaga(
       }
 
       yield call(() =>
-         fetch(`http://${envs.NP_SERVER_URL}/products`, {
+         fetch(`${envs.NP_SERVER_URL}/products`, {
             method: 'POST',
             headers: {
                Authorization: `Bearer ${token}`,
@@ -121,7 +121,7 @@ export function* updateProductSaga(
       }
 
       yield call(() =>
-         fetch(`http://${envs.NP_SERVER_URL}/products/${action.payload.id}`, {
+         fetch(`${envs.NP_SERVER_URL}/products/${action.payload.id}`, {
             method: 'PATCH',
             headers: {
                Authorization: `Bearer ${token}`,
@@ -145,7 +145,7 @@ export function* deleteProductSaga(
 
    try {
       yield call(() =>
-         fetch(`http://${envs.NP_SERVER_URL}/products/${action.payload}`, {
+         fetch(`${envs.NP_SERVER_URL}/products/${action.payload}`, {
             method: 'DELETE',
             headers: {
                Authorization: `Bearer ${token}`,

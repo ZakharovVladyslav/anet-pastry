@@ -7,7 +7,7 @@ export const refreshToken = async (session: Session) => {
 
    if (!refreshToken) return;
 
-   const response = await fetch('http://localhost:3001/admins/auth/refresh', {
+   const response = await fetch('localhost:3001/admins/auth/refresh', {
       method: 'POST',
       headers: {
          'Content-Type': 'application/json',

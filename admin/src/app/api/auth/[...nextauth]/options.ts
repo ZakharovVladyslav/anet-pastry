@@ -29,15 +29,19 @@ export const options: NextAuthOptions = {
                throw new Error('403');
             }
 
-            const data = await response.json();
+            const data = (await response.json()) as TTokens;
 
             console.log({ data });
+
+            console.log(data.accessToken);
 
             const user = await fetch(`${process.env.SERVER_URL}/admins/admin`, {
                headers: {
                   Authorization: `Bearer ${data.accessToken}`,
                },
             }).then(res => res.json());
+
+            console.log({ user });
 
             return {
                ...user,
